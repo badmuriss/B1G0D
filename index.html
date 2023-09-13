@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>B1G0D</title>
+
+
+
+    <!-- link css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <!-- link css -->
+
+</head>
+
+<body>
+
+
+    <header>
+        <!-- Menu de navegação -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">B1G0D!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#armas">Armas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hardware</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Robô</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Competições</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main class="my-5">
+        <!-- Seção de apresentação do robô -->
+        <section class="container m-auto my-5 justify-content-center row">
+            <figure class="col-md-6 my-5">
+                <img src="https://picsum.photos/500/300" alt="Imagem do robô" class="img-fluid align-items-center">
+            </figure>
+            <article class="col-md-6 my-5">
+                <h2 class="">Conheça o B1G0D</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, recusandae.</p>
+            </article>
+        </section>
+
+        <!-- seção do carrossel -->
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner w-100 ratio ratio-16x9">
+              <div class="carousel-item active">
+                <img src="./img/img-robo2.jpg" class="img-fluid  " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/img-robo2.jpg" class="img-fluid  " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/img-robo2.jpg" class="img-fluid " alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <!-- Seção Arma -->
+          <section class="row justify-content-center align-items-center m-auto" id="armas">
+            <article class="col-md-6 d-flex flex-column align-items-center">
+
+                <h2 class="text-center">SOBRE A ARMA</h2>
+                <p class="fs-6 text-center w-75 my-3">Sua arma consiste Estrela da Manhã, ela é uma arma da era medieval que tem por principal característica uma esfera com espinhos em uma de suas extremidades. O termo “Estrela da Manhã” foi dado à arma por conta de sua semelhança com uma estrela, ou ponto de luz.</p>
+                
+            </article>
+          <figure class="col-md-6 d-flex justify-content-center align-items-center">
+            <img src="./img/Arma.png" alt="" class="w-75 ">
+          </figure>
+
+        </section>
+
+
+
+        <!-- Seção Hardware  -->
+        <section class="">
+            <h2 class="text-center my-5">Hardware utilizado para montagem do robô</h2>
+            <ul>
+                <li>Arduino</li>
+                <li>Motores</li>
+                <li>Chaves de fim de curso</li>
+                <li>Protoboard</li>
+                <li>Fita LED</li>
+            </ul>
+        </section>
+
+    </main>
+
+
+
+
+    <!-- link js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
