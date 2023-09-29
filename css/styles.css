@@ -1,15 +1,32 @@
-
-
-h1, h2, h3{
+h1,
+h2,
+h3,
+a {
     letter-spacing: 1px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 
+.nav-item {
+    font-size: 1.1rem;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+.bg.main {
+    background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35870098039215685) 49%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+.color-purple {
+    color: #b000c0;
+}
 
 .carousel-control-prev-icon {
     background-color: white;
@@ -17,21 +34,36 @@ body{
 
 
 /* conteudo retirado de: https://wweb.dev/resources/css-separator-generator */
-.divider { 
-    border: 0; 
-    height: 1px; 
-    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+.triangle {
+    position: relative;
+    background: #000000;
+    transition: .5s;
+    animation: triangle 1.5s 5s infinite;
+  }
+  
+.triangle::before {
+    transition: .5s;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 100px;
+    border-color: transparent transparent #212529 transparent;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+.triangle:hover{
+    
+}
 
 .spikes {
     position: relative;
     background: #212529;
-  }
-  
+}
+
 .spikes::after {
     content: '';
     position: absolute;
@@ -47,7 +79,58 @@ body{
 }
 
 @media (min-width: 1700px) {
-.h-md-screen{
-    height: 100vh;
+    .h-md-screen {
+        height: 100vh;
+    }
 }
+
+#botaoMais {
+    transition: .5s;
+}
+
+#botaoMais:hover {
+    transform: scale(1.1);
+    color: #b000c0;
+}
+
+#botaoSeta {
+    animation: arrow 1s 5s infinite;
+    transition: .5s;
+}
+
+#linkComercial {
+    color: white;
+    transition: .5s;
+}
+
+#linkComercial:hover {
+    color: #b000c0;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes triangle {
+    0% {
+        transform: rotateX(30deg);
+    }
+
+    50% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(30deg);
+    }
 }
