@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pt-br" data-bs-theme="dark">
+<html class="h-100" lang="pt-br" data-bs-theme="dark">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>B1G0D</title>
+    <title>B!G0D</title>
 
 
 
@@ -12,27 +12,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <!-- link bootstrap-icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <!-- link css -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/fonts.css">
 
 </head>
 
-<body>
+<body class="h-100">
 
 
     <header>
         <!-- Menu de navegação -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">B1G0D!</a>
+                <a class="navbar-brand ms-2" href="#">B!G0D</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse ms-2 mt-3" id="navbarNav">
+                    <ul class="navbar-nav ms-auto d-md-flex flex-md-row gap-3">
 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
@@ -41,22 +46,32 @@
                             <a class="nav-link" href="#armas">Armas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Hardware</a>
+                            <a class="nav-link" href="#hardware">Hardware</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Robô</a>
+                            <a class="nav-link" href="#robo">Robô</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Equipe</a>
+                            <a class="nav-link" href="#equipe">Equipe</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Competições</a>
+                            <a class="nav-link" href="#competicoes">Competições</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto d-md-flex flex-md-row g-5">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comercial</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contato</a>
                         </li>
 
                     </ul>
+
+
                 </div>
             </div>
         </nav>
@@ -66,13 +81,13 @@
 
     <main class="my-5">
         <!-- Seção de apresentação do robô -->
-        <section class="container m-auto my-5 justify-content-center row">
+        <section class="container m-auto my-5 justify-content-center row align-items-center h-md-screen">
             <figure class="col-md-6 my-5">
                 <img src="https://picsum.photos/500/300" alt="Imagem do robô" class="img-fluid align-items-center">
             </figure>
             <article class="col-md-6 my-5">
-                <h2 class="">Conheça o B1G0D</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, recusandae.</p>
+                <h2 class="text-center text-md-start">Conheça a B!GOD</h2>
+                <p class="text-center text-md-start">A B!GOD é uma iniciativa começada a partir do Robô Bob, criado para uma competição da FIAP, a RoboCup. Ele era equipado de uma arma e seu objetivo era estourar os balões de seus adversários.</p>
             </article>
         </section>
 
@@ -80,86 +95,235 @@
 
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner w-100 ratio ratio-16x9">
-              <div class="carousel-item active">
-                <img src="./img/img-robo2.jpg" class="img-fluid  " alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/img-robo2.jpg" class="img-fluid  " alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/img-robo2.jpg" class="img-fluid " alt="...">
-              </div>
+                <div class="carousel-item active">
+                    <img src="./img/img-robo2.jpg" class="img-fluid  " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img-robo2.jpg" class="img-fluid  " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img-robo2.jpg" class="img-fluid " alt="...">
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
 
+        <div class="divider mt-5"></div>
 
-          <!-- Seção Arma -->
-          <section class="row justify-content-center align-items-center m-auto" id="armas">
+        <!-- Seção Arma -->
+        <section class="row justify-content-center align-items-center mx-auto mb-5 flex-column-reverse flex-md-row h-md-screen" id="armas">
             <article class="col-md-6 d-flex flex-column align-items-center">
 
                 <h2 class="text-center">SOBRE A ARMA</h2>
-                <p class="fs-6 text-center w-75 my-3">Sua arma consiste Estrela da Manhã, ela é uma arma da era medieval que tem por principal característica uma esfera com espinhos em uma de suas extremidades. O termo “Estrela da Manhã” foi dado à arma por conta de sua semelhança com uma estrela, ou ponto de luz.</p>
-                
+                <p class="fs-6 text-center w-75 my-3">Sua arma consiste Estrela da Manhã, ela é uma arma da era medieval
+                    que tem por principal característica uma esfera com espinhos em uma de suas extremidades. O termo
+                    “Estrela da Manhã” foi dado à arma por conta de sua semelhança com uma estrela, ou ponto de luz.</p>
+
             </article>
-          <figure class="col-md-6 d-flex justify-content-center align-items-center">
-            <img src="./img/Arma.png" alt="" class="w-75 ">
-          </figure>
+            <figure class="col-md-6 d-flex justify-content-center align-items-center">
+                <img src="./img/Arma.png" alt="" class="w-75 ">
+            </figure>
 
         </section>
 
-
+        <div class="divider my-5"></div>
 
         <!-- Seção Hardware  -->
-        <section class="row flex-row justify-content-center">
-                <h2 class="text-center my-5">Hardware utilizado para montagem do robô</h2>
-    
-                <figure class="col-md-2 d-flex flex-column justify-content-center pt-5">
-                    <img src="./img/Arduino.png" alt="" class="img-fluid">
-                    <figcaption class="text-center mt-auto">Arduino</figcaption>
-                </figure>
-                
+        <section class="d-flex flex-column justify-content-center pb-5 h-md-screen" id="hardware">
+            <h2 class="text-center my-5">Hardware utilizado para montagem do robô</h2>
 
-                <figure class="col-md-2 d-flex flex-column justify-content-between">
-                    <img src="./img/Motor.png" alt="" class="img-fluid">
+            <div class="h-50 row flex-row justify-content-center my-5 pb-5">
+                <figure class="col-md-2 col-5 d-flex flex-column justify-content-between pt-5 align-items-center my-4">
+                    <img src="./img/Arduino.png" alt="" class="img-fluid col-7 col-md-12">
+                    <figcaption class="text-center mt-5">Arduino</figcaption>
+                </figure>
+    
+    
+                <figure class="col-md-2 col-6 d-flex flex-column justify-content-between align-items-center my-4">
+                    <img src="./img/Motor.png" alt="" class="img-fluid col-7 col-md-12 col-7 col-md-12">
                     <figcaption class="text-center">Motores</figcaption>
                 </figure>
-                
-
-                <figure class="col-md-2 d-flex flex-column justify-content-between">
-                    <img src="#" alt="" class="img-fluid">
+    
+    
+                <figure class="col-md-2 col-6 d-flex flex-column justify-content-between align-items-center pt-5 my-4">
+                    <img src="./img/chaves-fdc.png" alt="" class="img-fluid col-7 col-md-12">
                     <figcaption class="text-center">Chaves de fim de curso</figcaption>
                 </figure>
-                
-
-                <figure class="col-md-2 d-flex flex-column justify-content-between" >
-                    <img src="./img/Protoboard.png" alt="" class="img-fluid">
+    
+    
+                <figure class="col-md-2 col-6 d-flex flex-column justify-content-between align-items-center my-4">
+                    <img src="./img/Protoboard.png" alt="" class="img-fluid col-7 col-md-12">
                     <figcaption class="text-center">Protoboard</figcaption>
                 </figure>
-                
-
-                <figure class="col-md-2 d-flex flex-column justify-content-between">
-                    <img src="/img/fitaled.png" alt="" class="img-fluid">
+    
+    
+                <figure class="col-md-2 col-6 d-flex flex-column justify-content-between align-items-center my-4">
+                    <img src="./img/fitaled.png" alt="" class="img-fluid col-7 col-md-12">
                     <figcaption class="text-center">Fita LED</figcaption>
-                </figure>
-               
+                </figure>    
+
+            </div>
+            
+
+
+
         </section>
 
+        
+        
+        <div class="divider my-5"></div>
+
+    
+
+        <section id="robo">
+            <div class="ratio ratio-16x9 col-md-6 d-flex">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gl965Lg_UG0?si=uPZpQTPNg0S_nMLX&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            </div>
+            <div class="divider my-5"></div>
+            <div class="ratio ratio-16x9 col-md-6 d-flex ">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gl965Lg_UG0?si=uPZpQTPNg0S_nMLX&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            </div>
+            
+        </section>
+
+        <div class="divider my-5"></div>
+
+        <!-- Seção Equipe -->
+        <section class="d-flex flex-column justify-content-center align-items-center" id="equipe">
+            <h2 class="text-center my-5">Conheça nossa equipe</h2>
+
+            <section class="">
+                <section class="row justify-content-center align-items-center">
+                    <figure class="col-md-3 col-6 d-flex flex-column justify-content-center align-items-center my-4">
+                        <img src="./img/Eduardo.png" alt="Imagem Eduardo" class="img-fluid col-7 col-md-8 rounded-5">
+                        <figcaption class="text-center my-3">Eduardo Paludetto</figcaption>
+                    </figure>
+        
+        
+                    <figure class="col-md-3 col-6 d-flex flex-column justify-content-center align-items-center my-4">
+                        <img src="./img/Felipe.jpg" alt="Imagem Felipe Cardoso" class="img-fluid col-7 col-md-8 rounded-5">
+                        <figcaption class="text-center my-3">Felipe Cardoso</figcaption>
+                    </figure>
+        
+        
+                    <figure class="col-md-3 col-6 d-flex flex-column justify-content-center align-items-center my-4">
+                        <img src="./img/Gimenes.jpg" alt="Imagem Felipe Gimenes" class="img-fluid col-7 col-md-8 rounded-5">
+                        <figcaption class="text-center my-3">Felipe Gimenes</figcaption>
+                    </figure>
+                </section>
+               
+    
+                <section class="row justify-content-center align-items-center">
+                    <figure class="col-md-3 col-6 d-flex flex-column justify-content-center align-items-center my-4">
+                        <img src="./img/Murilo.png" alt="Imagem Murilo" class="img-fluid col-7 col-md-8 rounded-5">
+                        <figcaption class="text-center my-3">Murilo Moura</figcaption>
+                    </figure>
+        
+        
+                    <figure class="col-md-3 col-6 d-flex flex-column justify-content-center align-items-center my-4">
+                        <img src="./img/Roberto.png" alt="Imagem Roberto" class="img-fluid col-7 col-md-8 rounded-5">
+                        <figcaption class="text-center my-3">Roberto Felix</figcaption>
+                    </figure>
+        
+                </section>
+
+                
+            </section>
+            
+        </section>
+
+        <div class="divider my-5"></div>
+
+        <!-- Seção RoboCup e Next -->
+        <section>
+        <h2 class="m-auto text-center my-5">Competições</h2>
+        <div class="container m-auto mb-5 justify-content-center row align-items-center" id="competicoes">
+            <figure class="col-md-6 my-md-5 my-3">
+                <img src="./img/robocup.jpg" alt="Imagem da RoboCup" class="img-fluid align-items-center rounded-5">
+            </figure>
+            <article class="col-md-6 my-5">
+                <h2 class="text-center">RoboCup</h2>
+                <p class="text-center w-75 m-auto">A RoboCup é uma competição organizada pela FIAP, onde robôs duelam em busca de estourar o balão do outro.</p>
+            </article>
+        </div>
+        <div
+            class="container m-auto my-5 justify-content-center d-flex align-items-center flex-column-reverse flex-md-row">
+            <article class="col-md-6 my-5">
+                <h2 class="text-center">Next</h2>
+                <p class="text-center w-75 m-auto">O Next é um evento promovido pela FIAP onde, além de diversas apresentações e presenças ilustres, temos as fases finais da robocup.</p>
+            </article>
+
+            <figure class="col-md-6 my-md-5 my-3">
+                <img src="./img/fiap-next.jpg" alt="Imagem do NEXT" class="img-fluid align-items-center rounded-5">
+            </figure>
+
+        </div>
+    </section>
     </main>
 
+    <div class="bg-black">
 
+
+
+        <section class="spikes pt-5 my-5"></section>
+
+        
+
+        <!-- Seção Formulário de contato -->
+
+
+
+        <section class="m-auto bg-black mt-5" id="contato">
+            
+            <!-- espacamento -->
+            <p class="h-100 py-3"></p>
+            
+            <h2 class="text-center my-4 mt-5">Entre em contato conosco:</h2>
+            <form class="container row mx-auto justify-content-center">
+                <h2></h2>
+                <div class="form-floating mb-3 col-md-6 p-auto">
+                    <input type="" class="form-control" id="floatingInput" placeholder="Seu Nome">
+                    <label for="floatingInput" class="ms-3">Nome</label>
+
+                </div>
+                <div class="form-floating col-md-6 p-auto mb-3">
+                    <input type="" class="form-control" id="floatingPassword" placeholder="Ex: fulano123@gmail.com">
+                    <label for="" class="ms-3">E-mail</label>
+                </div>
+                <div class="form-floating  p-auto">
+                    <input type="" class="form-control" id="floatingPassword" placeholder="">
+                    <label for="" class="ms-3">Sua mensagem</label>
+                </div>
+                <button type="submit" class="btn btn-bd-primary col-11 col-md-4  py-3 my-4">Enviar</button>
+            </form>
+        </section>
+
+
+
+        <footer class="mt-5">
+            <section class="mt-5 bg-black">
+                <p class="text-center pt-5 py-4">© B1GOD</p>
+            </section>
+        </footer>
+
+    </div>
 
 
     <!-- link js bootstrap -->
