@@ -28,19 +28,14 @@ body {
     color: #b000c0;
 }
 
-.carousel-control-prev-icon {
-    background-color: white;
-}
-
-
 /* conteudo retirado de: https://wweb.dev/resources/css-separator-generator */
 .triangle {
     position: relative;
     background: #000000;
     transition: .5s;
     animation: triangle 1.5s 5s infinite;
-  }
-  
+}
+
 .triangle::before {
     transition: .5s;
     content: '';
@@ -55,9 +50,7 @@ body {
     transform: translateX(-50%);
 }
 
-.triangle:hover{
-    
-}
+.triangle:hover {}
 
 .spikes {
     position: relative;
