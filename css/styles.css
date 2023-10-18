@@ -24,6 +24,10 @@ body {
 
 }
 
+.bg-purple {
+    background-color: #b000c0;
+}
+
 .color-purple {
     color: #b000c0;
 }
@@ -69,6 +73,20 @@ body {
     background-size: 50px 100%;
     background-image: linear-gradient(135deg, #212529 25%, transparent 25%), linear-gradient(225deg, #212529 25%, transparent 25%);
     background-position: 0 0;
+}
+
+.btn-purple {
+    font-weight: bold;
+    background-color: #b000c0;
+    border: 1px solid #b000c0;
+    transition: .3s;
+}
+
+
+.btn-purple:hover {
+    background-color: #ffffff;
+    color: #b000c0;
+    border: 1px solid #b000c0;
 }
 
 @media (min-width: 1700px) {
