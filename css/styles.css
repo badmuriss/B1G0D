@@ -25,11 +25,11 @@ body {
 }
 
 .bg-purple {
-    background-color: #b000c0;
+    background-color: #6528e0;
 }
 
 .color-purple {
-    color: #b000c0;
+    color: #6528e0;
 }
 
 /* conteudo retirado de: https://wweb.dev/resources/css-separator-generator */
@@ -76,16 +76,16 @@ body {
 
 .btn-purple {
     font-weight: bold;
-    background-color: #9700a5;
-    border: 1px solid #9700a5;
+    background-color: #6528e0;
+    border: 1px solid #6528e0;
     transition: .3s;
 }
 
 
 .btn-purple:hover {
     background-color: #ffffff;
-    color: #9700a5;
-    border: 1px solid #9700a5;
+    color: #6528e0;
+    border: 1px solid #6528e0;
 }
 
 .h-screen {
@@ -104,7 +104,7 @@ body {
 
 #botaoMais:hover {
     transform: scale(1.1);
-    color: #b000c0;
+    color: #6528e0;
 }
 
 #botaoSeta {
@@ -118,7 +118,7 @@ body {
 }
 
 #linkComercial:hover {
-    color: #b000c0;
+    color: #6528e0;
 }
 
 @keyframes arrow {
