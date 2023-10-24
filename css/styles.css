@@ -54,7 +54,6 @@ body {
     transform: translateX(-50%);
 }
 
-.triangle:hover {}
 
 .spikes {
     position: relative;
@@ -77,16 +76,20 @@ body {
 
 .btn-purple {
     font-weight: bold;
-    background-color: #b000c0;
-    border: 1px solid #b000c0;
+    background-color: #9700a5;
+    border: 1px solid #9700a5;
     transition: .3s;
 }
 
 
 .btn-purple:hover {
     background-color: #ffffff;
-    color: #b000c0;
-    border: 1px solid #b000c0;
+    color: #9700a5;
+    border: 1px solid #9700a5;
+}
+
+.h-screen {
+    height: 100vh;
 }
 
 @media (min-width: 1700px) {
